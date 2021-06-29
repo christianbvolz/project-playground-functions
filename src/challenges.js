@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 // Desafio 1
 function compareTrue(param1, param2) {
   if (param1 && param2) {
@@ -87,11 +88,62 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+
+// eslint-disable-next-line max-lines-per-function
+// eslint-disable-next-line complexity
+function encode(string) {
+  let result = '';
+  for (let character of string) {
+    switch (character) {
+    case ('a'):
+      result += '1';
+      break;
+    case ('e'):
+      result += '2';
+      break;
+    case ('i'):
+      result += '3';
+      break;
+    case ('o'):
+      result += '4';
+      break;
+    case ('u'):
+      result += '5';
+      break;
+    default:
+      result += character;
+      break;
+    }
+  }
+  return result;
 }
-function decode() {
-  // seu código aqui
+
+// eslint-disable-next-line complexity
+function decode(string) {
+  let result = '';
+  for (let character of string) {
+    switch (character) {
+    case ('1'):
+      result += 'a';
+      break;
+    case ('2'):
+      result += 'e';
+      break;
+    case ('3'):
+      result += 'i';
+      break;
+    case ('4'):
+      result += 'o';
+      break;
+    case ('5'):
+      result += 'u';
+      break;
+    default:
+      result += character;
+      break;
+    }
+  }
+  return result;
 }
 
 module.exports = {
