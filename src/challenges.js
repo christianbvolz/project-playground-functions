@@ -13,6 +13,7 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function splitSentence(string) {
   let result = [];
   let indexResult = 0;
@@ -69,6 +70,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function fizzBuzz(array) {
   let result = [];
   for (let number of array) {

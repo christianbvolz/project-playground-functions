@@ -1,6 +1,17 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, nome) {
+  if (array.length === 0) {
+    return 'Vazio!';
+  }
+  let result = [];
+  // eslint-disable-next-line guard-for-in
+  for (let index in array.sort()) {
+    result[index] = {
+      tech: array[index],
+      name: nome,
+    };
+  }
+  return result;
 }
 
 // Desafio 11
