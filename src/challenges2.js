@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable guard-for-in */
 /* eslint-disable complexity */
 /* eslint-disable max-lines-per-function */
@@ -41,8 +42,11 @@ function generatePhoneNumber(array) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA < Math.abs(lineB + lineC) && lineB < Math.abs(lineA + lineC) && lineC < Math.abs(lineB + lineA)) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 13
